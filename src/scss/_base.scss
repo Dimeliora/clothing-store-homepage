@@ -9,7 +9,8 @@ html {
 }
 
 body {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: $bg-white;
+	color: $black;
 	font-family: "Sofia Pro", sans-serif;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -23,4 +24,16 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 7.5fr;
+	grid-template-rows: 45px 1fr;
+	grid-template-areas:
+		"header  header"
+		"sidebar gallery";
+	gap: 50px 80px;
+	min-height: 100vh;
+	padding: 55px;
 }

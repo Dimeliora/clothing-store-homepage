@@ -134,7 +134,7 @@ const svg = () =>
 								plugins: [
 									{ removeViewBox: false },
 									{ cleanupIDs: false },
-									// { removeAttrs: { attrs: "(fill|stroke)" } },
+									{ removeAttrs: { attrs: "(fill|stroke)" } },
 								],
 							},
 						},
@@ -208,13 +208,10 @@ const watchers = () => {
 	watch(`${SRC_PATH}/icons/**/*.svg`, svg);
 };
 
-// ======== Generate favicons & HTML Injection ========
-const favicon = series(makeFavicons, injectFavicons, clearFaviconData);
-
 // ======== Build Task ========
 const build = series(
 	clearDist,
-	favicon,
+	series(makeFavicons, injectFavicons, clearFaviconData),
 	parallel(html, scss, js, images, webpConvert, svg, fonts, copyFavicons)
 );
 
@@ -224,4 +221,3 @@ const serve = series(build, parallel(devServer, watchers));
 // ======== Exports ========
 exports.build = build;
 exports.serve = serve;
-exports.favicon = favicon;
