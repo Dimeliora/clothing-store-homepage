@@ -36,7 +36,7 @@
 	}
 
 	&__search-input {
-		width: 200px;
+		width: 120px;
 		padding: 5px 10px 0;
 		border: none;
 		border-bottom: 2px solid transparent;
@@ -70,7 +70,7 @@
 			width: var(--item-width);
 			height: 2px;
 			background-color: $black;
-			transition: all 0.2s ease-out;
+			transition: all 0.3s ease-out;
 		}
 	}
 
