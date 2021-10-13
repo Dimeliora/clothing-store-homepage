@@ -7,6 +7,10 @@
 		align-items: center;
 	}
 
+	@media screen and (max-width: $sm) {
+		padding-bottom: 50px;
+	}
+
 	&__wrapper {
 		display: grid;
 		grid-template-columns: 1fr 7fr;
@@ -44,7 +48,7 @@
 			position: absolute;
 			top: 0;
 			left: -100vw;
-			z-index: 100;
+			z-index: 500;
 			display: grid;
 			grid-template-columns: minmax(155px, 2fr) 1fr;
 			grid-template-rows: 45px 1fr;

@@ -83,7 +83,13 @@
 			</header>
 			<main>
 				<div class="content">
+					<button class="sidebar-button">Explore</button>
 					<section class="sidebar">
+						<button class="sidebar__close-button">
+							<svg class="sidebar__close-icon">
+								<use href="./icons/icon-sprite.svg#close"></use>
+							</svg>
+						</button>
 						<h2 class="sidebar__heading">Explore</h2>
 						<nav class="sidebar__menu">
 							<a href="/" class="sidebar__menu-link">
@@ -142,15 +148,15 @@
 								/>
 								<span class="sidebar__menu-label">Inspiration</span>
 							</a>
+							<a href="/" class="sidebar__help-link">
+								<div class="sidebar__help-image">
+									<svg class="sidebar__help-icon">
+										<use href="/icons/icon-sprite.svg#message" />
+									</svg>
+								</div>
+								<div class="sidebar__help-label">Help Center</div>
+							</a>
 						</nav>
-						<a href="/" class="sidebar__help-link">
-							<div class="sidebar__help-image">
-								<svg class="sidebar__help-icon">
-									<use href="/icons/icon-sprite.svg#message" />
-								</svg>
-							</div>
-							<div class="sidebar__help-label">Help Center</div>
-						</a>
 					</section>
 					<section class="gallery">
 						<h2 class="visually-hidden">Products gallery</h2>

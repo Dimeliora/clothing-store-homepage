@@ -9,6 +9,8 @@
 		grid-template-columns: 1.2fr 7fr;
 	}
 
-	@media screen and (max-width: $xl) {
+	@media screen and (max-width: $lg) {
+		display: block;
+		padding-top: 50px;
 	}
 }
