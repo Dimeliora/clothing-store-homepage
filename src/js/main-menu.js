@@ -1,5 +1,7 @@
 export const mainMenuHandler = () => {
+	const mainNavBar = document.querySelector(".header__navbar");
 	const mainMenu = document.querySelector(".header__menu");
+	const mainMenuButton = document.querySelector(".header__menu-button");
 	const mainMenuLinks = document.querySelectorAll(".header__link");
 
 	if (mainMenu) {
@@ -24,5 +26,13 @@ export const mainMenuHandler = () => {
 			link.addEventListener("focus", showLinkUnderline);
 			link.addEventListener("blur", hideLinkUnderline);
 		});
+
+		if (mainNavBar && mainMenuButton) {
+			mainMenuButton.addEventListener("click", () => {
+				mainNavBar.classList.toggle("header__navbar--active");
+				mainMenuButton.classList.toggle("header__menu-button--active");
+				document.body.classList.toggle("scroll-prevent");
+			});
+		}
 	}
 };

@@ -28,16 +28,21 @@ li {
 	padding: 0;
 }
 
-.container {
-	display: grid;
-	grid-template-columns: 1fr 7fr;
-	grid-template-rows: 45px 1fr;
-	grid-template-areas:
-		"header  header"
-		"sidebar gallery";
-	gap: 50px 80px;
+main {
 	height: 100%;
-	padding: 55px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1920px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 50px;
+
+	@media screen and (max-width: $sm) {
+		padding: 25px;
+	}
 }
 
 .visually-hidden {
@@ -49,4 +54,8 @@ li {
 	overflow: hidden;
 	border: 0;
 	clip: rect(0 0 0 0);
+}
+
+.scroll-prevent {
+	overflow-y: hidden;
 }

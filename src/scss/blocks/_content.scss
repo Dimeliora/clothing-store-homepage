@@ -1,0 +1,14 @@
+.content {
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	column-gap: 80px;
+	height: 100%;
+	padding-top: 25px;
+
+	@media screen and (max-width: $xxl) {
+		grid-template-columns: 1.2fr 7fr;
+	}
+
+	@media screen and (max-width: $xl) {
+	}
+}
