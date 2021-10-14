@@ -19,7 +19,7 @@
 		outline: none;
 		transform: scale(1.2);
 
-		@media (max-width: $md) {
+		@media (max-width: $lg) {
 			transform: none;
 		}
 	}

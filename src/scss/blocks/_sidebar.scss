@@ -20,8 +20,7 @@
 		}
 	}
 
-	&__heading,
-	&-button {
+	&__heading {
 		margin-bottom: 40px;
 		font-size: 3rem;
 		font-weight: 700;
@@ -34,25 +33,42 @@
 
 	&-button {
 		position: fixed;
-		left: 50px;
-		top: 105px;
+		left: 60px;
+		top: 120px;
 		z-index: 100;
 		display: none;
-		padding: 2px 10px;
+		padding: 0;
 		border: none;
-		border-radius: 15px;
-		background-color: rgba(244, 222, 77, 0.35);
+		border-radius: 50%;
+		background-color: #fff;
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.75);
 		font-family: inherit;
 		text-align: left;
 		cursor: pointer;
 
+		&__icon {
+			width: 40px;
+			height: 40px;
+			fill: #202020;
+		}
+
+		&--active {
+			box-shadow: none;
+
+			.sidebar-button__icon {
+				fill: rgba(0, 0, 0, 0.5);
+			}
+		}
+
 		@media screen and (max-width: $lg) {
-			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		@media screen and (max-width: $sm) {
-			left: 25px;
-			top: 90px;
+			left: 35px;
+			top: 110px;
 		}
 	}
 
@@ -61,8 +77,8 @@
 
 		@media screen and (max-width: $lg) {
 			position: absolute;
-			top: 10px;
-			right: 10px;
+			top: 15px;
+			right: 15px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -114,7 +130,7 @@
 				text-decoration: underline;
 			}
 
-			@media (max-width: $md) {
+			@media (max-width: $lg) {
 				.sidebar__menu-icon {
 					transform: none;
 				}

@@ -4,8 +4,14 @@ export const sideMenuHandler = () => {
 	const sidebarCloseButton = document.querySelector(".sidebar__close-button");
 
 	if (sidebar && sidebarButton && sidebarCloseButton) {
+		const closeSidebarHandler = () => {
+			sidebar.classList.remove("sidebar--active");
+			sidebarButton.classList.remove("sidebar-button--active");
+		};
+
 		sidebarButton.addEventListener("click", () => {
 			sidebar.classList.toggle("sidebar--active");
+			sidebarButton.classList.toggle("sidebar-button--active");
 		});
 
 		document.addEventListener("click", (e) => {
@@ -13,12 +19,10 @@ export const sideMenuHandler = () => {
 			const issidebarButtonClicked = e.composedPath().includes(sidebarButton);
 
 			if (!isSidebarClicked && !issidebarButtonClicked) {
-				sidebar.classList.remove("sidebar--active");
+				closeSidebarHandler();
 			}
 		});
 
-		sidebarCloseButton.addEventListener("click", () => {
-			sidebar.classList.remove("sidebar--active");
-		});
+		sidebarCloseButton.addEventListener("click", closeSidebarHandler);
 	}
 };

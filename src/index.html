@@ -83,11 +83,15 @@
 			</header>
 			<main>
 				<div class="content">
-					<button class="sidebar-button">Explore</button>
+					<button class="sidebar-button">
+						<svg class="sidebar-button__icon">
+							<use href="/icons/icon-sprite.svg#sidebar" />
+						</svg>
+					</button>
 					<section class="sidebar">
 						<button class="sidebar__close-button">
 							<svg class="sidebar__close-icon">
-								<use href="./icons/icon-sprite.svg#close"></use>
+								<use href="/icons/icon-sprite.svg#close" />
 							</svg>
 						</button>
 						<h2 class="sidebar__heading">Explore</h2>
@@ -273,19 +277,11 @@
 									</div>
 								</div>
 								<picture>
-									<source
-										srcset="
+									<source srcset="
 											/images/gallery-7@1x.webp,
 											/images/gallery-7@2x.webp 2x
-										"
-										type="image/webp"
-									/>
-									<img
-										src="/images/gallery-7@1x.jpg"
-										srcset="/images/gallery-7@2x.jpg 2x"
-										alt
-										class="gallery__image"
-									/>
+										" type="image/webp">
+									<img src="/images/gallery-7@1x.jpg" srcset="/images/gallery-7@2x.jpg 2x" alt class="gallery__image">
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
@@ -298,19 +294,11 @@
 									</div>
 								</div>
 								<picture>
-									<source
-										srcset="
+									<source srcset="
 											/images/gallery-8@1x.webp,
 											/images/gallery-8@2x.webp 2x
-										"
-										type="image/webp"
-									/>
-									<img
-										src="/images/gallery-8@1x.jpg"
-										srcset="/images/gallery-8@2x.jpg 2x"
-										alt
-										class="gallery__image"
-									/>
+										" type="image/webp">
+									<img src="/images/gallery-8@1x.jpg" srcset="/images/gallery-8@2x.jpg 2x" alt class="gallery__image">
 								</picture>
 							</a>
 						</div>
