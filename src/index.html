@@ -77,19 +77,22 @@
 						</div>
 					</nav>
 				</div>
-				<button class="header__menu-button">
+				<button class="header__menu-button" aria-label="Main navigation menu">
 					<span></span><span></span><span></span>
 				</button>
 			</header>
 			<main>
 				<div class="content">
-					<button class="sidebar-button">
+					<button class="sidebar-button" aria-label="Sidebar navigation menu">
 						<svg class="sidebar-button__icon">
 							<use href="/icons/icon-sprite.svg#sidebar" />
 						</svg>
 					</button>
 					<section class="sidebar">
-						<button class="sidebar__close-button">
+						<button
+							class="sidebar__close-button"
+							aria-label="Close sidebar menu"
+						>
 							<svg class="sidebar__close-icon">
 								<use href="/icons/icon-sprite.svg#close" />
 							</svg>
@@ -202,6 +205,15 @@
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
+								<button
+									class="gallery__favs-button"
+									aria-label="Add to favourites"
+									title="To favourites"
+								>
+									<svg class="gallery__favs-icon">
+										<use href="/icons/icon-sprite.svg#heart"></use>
+									</svg>
+								</button>
 								<picture>
 									<source
 										srcset="
@@ -219,6 +231,15 @@
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
+								<button
+									class="gallery__favs-button"
+									aria-label="Add to favourites"
+									title="To favourites"
+								>
+									<svg class="gallery__favs-icon">
+										<use href="/icons/icon-sprite.svg#heart"></use>
+									</svg>
+								</button>
 								<picture>
 									<source
 										srcset="
@@ -236,6 +257,15 @@
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
+								<button
+									class="gallery__favs-button"
+									aria-label="Add to favourites"
+									title="To favourites"
+								>
+									<svg class="gallery__favs-icon">
+										<use href="/icons/icon-sprite.svg#heart"></use>
+									</svg>
+								</button>
 								<picture>
 									<source
 										srcset="
@@ -253,6 +283,15 @@
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
+								<button
+									class="gallery__favs-button"
+									aria-label="Add to favourites"
+									title="To favourites"
+								>
+									<svg class="gallery__favs-icon">
+										<use href="/icons/icon-sprite.svg#heart"></use>
+									</svg>
+								</button>
 								<picture>
 									<source
 										srcset="
@@ -277,11 +316,19 @@
 									</div>
 								</div>
 								<picture>
-									<source srcset="
+									<source
+										srcset="
 											/images/gallery-7@1x.webp,
 											/images/gallery-7@2x.webp 2x
-										" type="image/webp">
-									<img src="/images/gallery-7@1x.jpg" srcset="/images/gallery-7@2x.jpg 2x" alt class="gallery__image">
+										"
+										type="image/webp"
+									/>
+									<img
+										src="/images/gallery-7@1x.jpg"
+										srcset="/images/gallery-7@2x.jpg 2x"
+										alt
+										class="gallery__image"
+									/>
 								</picture>
 							</a>
 							<a href="/" class="gallery__link">
@@ -294,11 +341,19 @@
 									</div>
 								</div>
 								<picture>
-									<source srcset="
+									<source
+										srcset="
 											/images/gallery-8@1x.webp,
 											/images/gallery-8@2x.webp 2x
-										" type="image/webp">
-									<img src="/images/gallery-8@1x.jpg" srcset="/images/gallery-8@2x.jpg 2x" alt class="gallery__image">
+										"
+										type="image/webp"
+									/>
+									<img
+										src="/images/gallery-8@1x.jpg"
+										srcset="/images/gallery-8@2x.jpg 2x"
+										alt
+										class="gallery__image"
+									/>
 								</picture>
 							</a>
 						</div>

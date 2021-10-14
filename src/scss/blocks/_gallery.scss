@@ -127,7 +127,7 @@
 			grid-column: 3 / span 2;
 
 			.gallery__link-heading {
-				color: #001aa2;
+				color: $blue;
 			}
 
 			@media screen and (max-width: $lg) {
@@ -143,7 +143,7 @@
 			grid-column: 3 / span 2;
 
 			.gallery__link-heading {
-				color: #fd2e24;
+				color: $red;
 			}
 
 			@media screen and (max-width: $lg) {
@@ -161,6 +161,79 @@
 				grid-column: initial;
 			}
 		}
+	}
+
+	&__favs-button {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 500;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px;
+		border: none;
+		border-radius: 50%;
+		background-color: #fff;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+
+		&:focus-visible,
+		&:hover {
+			outline: none;
+			transform: scale(1.2);
+
+			.gallery__favs-icon {
+				stroke: $red;
+				fill: $red;
+			}
+
+			@media screen and (max-width: $lg) {
+				transform: none;
+
+				.gallery__favs-icon {
+					stroke: $black;
+					fill: #fff;
+				}
+			}
+		}
+
+		&--active {
+			background-color: $red;
+
+			.gallery__favs-icon {
+				stroke: #fff;
+				fill: #fff;
+			}
+
+			&:focus-visible,
+			&:hover {
+				outline: none;
+				transform: scale(1.2);
+
+				.gallery__favs-icon {
+					stroke: #fff;
+					fill: #fff;
+				}
+
+				@media screen and (max-width: $lg) {
+					transform: none;
+
+					.gallery__favs-icon {
+						stroke: #fff;
+						fill: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	&__favs-icon {
+		width: 20px;
+		height: 18px;
+		stroke: $black;
+		fill: #fff;
+		transition: all 0.1s ease-out;
 	}
 
 	&__link-text {

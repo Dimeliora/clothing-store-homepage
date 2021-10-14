@@ -50,6 +50,11 @@
 			width: 40px;
 			height: 40px;
 			fill: #202020;
+
+			@media screen and (max-width: $sm) {
+				width: 30px;
+				height: 30px;
+			}
 		}
 
 		&--active {
@@ -68,7 +73,7 @@
 
 		@media screen and (max-width: $sm) {
 			left: 35px;
-			top: 110px;
+			top: 100px;
 		}
 	}
 
@@ -140,6 +145,11 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: $sm) {
+			margin-bottom: 12px;
+			font-size: 1.4rem;
+		}
 	}
 
 	&__menu-icon {
@@ -149,6 +159,11 @@
 		margin-right: 12px;
 		object-fit: cover;
 		transition: transform 0.2s ease-out;
+
+		@media screen and (max-width: $sm) {
+			width: 16px;
+			height: 16px;
+		}
 	}
 
 	&__help-link {
@@ -183,6 +198,11 @@
 
 		@media screen and (max-width: $lg) {
 			margin-top: 30px;
+		}
+
+		@media screen and (max-width: $sm) {
+			margin-top: 15px;
+			font-size: 1.4rem;
 		}
 	}
 
