@@ -3,8 +3,6 @@ export const favButtonsHandler = () => {
 
 	favButtons.forEach((btn) => {
 		btn.addEventListener("click", (e) => {
-			e.preventDefault();
-
 			btn.classList.toggle("gallery__favs-button--active");
 		});
 	});
