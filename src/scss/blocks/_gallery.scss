@@ -17,13 +17,11 @@
 		}
 	}
 
-	&__link {
+	&__item {
 		position: relative;
-		display: block;
 		height: 100%;
-		border-radius: 15px;
 		overflow: hidden;
-		text-transform: none;
+		border-radius: 15px;
 		transition: filter 0.2s ease-out;
 
 		&:focus-visible,
@@ -34,6 +32,11 @@
 			@media screen and (max-width: $lg) {
 				filter: none;
 			}
+		}
+
+		&__link {
+			display: block;
+			text-transform: none;
 		}
 
 		&:nth-child(1) {
