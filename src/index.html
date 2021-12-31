@@ -1,239 +1,407 @@
-<!DOCTYPE html><html lang="en"><head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Clothing Store Home Page</title>
-		<meta name="description" content="Simple home page for Clothing Store. For education purpose">
-		<link rel="stylesheet" href="/styles.css">
-		<script src="/script.js" defer=""></script>
-<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/icons/site.webmanifest">
-<link rel="shortcut icon" href="/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/icons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head>
-	<body>
-		<div class="container">
-			<h1 class="visually-hidden">Caped clothing store</h1>
-			<header class="header">
-				<div class="header__wrapper">
-					<a href="/" class="header__logo"><img src="/images/logo.png" alt="Company logo" class="header__logo-image"></a>
-					<nav class="header__navbar">
-						<div class="header__search">
-							<svg class="header__search-icon">
-								<use href="/icons/icon-sprite.svg#search"></use>
-							</svg>
-							<input type="text" aria-label="Search" placeholder="Search store" name="search" class="header__search-input">
-						</div>
-						<div class="header__menu">
-							<a href="/" class="header__link">products</a>
-							<a href="/" class="header__link">story</a>
-							<a href="/" class="header__link">manufacturing</a>
-							<a href="/" class="header__link">packaging</a>
-						</div>
-						<div class="header__buttons">
-							<button class="header__button-item icon-button" aria-label="Cart">
-								<svg class="icon-button__icon">
-									<use href="/icons/icon-sprite.svg#cart"></use>
-								</svg>
-							</button>
-							<button class="header__button-item icon-button" aria-label="User profile">
-								<svg class="icon-button__icon">
-									<use href="/icons/icon-sprite.svg#user"></use>
-								</svg>
-							</button>
-						</div>
-					</nav>
-				</div>
-				<button class="header__menu-button" aria-label="Main navigation menu">
-					<span></span><span></span><span></span>
-				</button>
-			</header>
-			<main>
-				<div class="content">
-					<button class="sidebar-button" aria-label="Sidebar navigation menu">
-						<svg class="sidebar-button__icon">
-							<use href="/icons/icon-sprite.svg#sidebar"></use>
-						</svg>
-					</button>
-					<section class="sidebar">
-						<button class="sidebar__close-button" aria-label="Close sidebar menu">
-							<svg class="sidebar__close-icon">
-								<use href="/icons/icon-sprite.svg#close"></use>
-							</svg>
-						</button>
-						<h2 class="sidebar__heading">Explore</h2>
-						<nav class="sidebar__menu">
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/new-in.png" alt="Lightning icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">New In</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/clothing.png" alt="Coat icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Clothing</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/shoes.png" alt="Shoe icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Shoes</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/accessories.png" alt="Bag icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Accessories</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/active-wear.png" alt="Sportsman icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Activewear</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/gifts-living.png" alt="Gift box icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Gifts &amp; Living</span>
-							</a>
-							<a href="/" class="sidebar__menu-link">
-								<img src="/images/inspiration.png" alt="Diamond icon" class="sidebar__menu-icon">
-								<span class="sidebar__menu-label">Inspiration</span>
-							</a>
-							<a href="/" class="sidebar__help-link">
-								<div class="sidebar__help-image">
-									<svg class="sidebar__help-icon">
-										<use href="/icons/icon-sprite.svg#message"></use>
-									</svg>
-								</div>
-								<div class="sidebar__help-label">Help Center</div>
-							</a>
-						</nav>
-					</section>
-					<section class="gallery">
-						<h2 class="visually-hidden">Products gallery</h2>
-						<div class="gallery__wrapper">
-							<div class="gallery__item gallery__item--promo-1">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="/images/gallery-1.svg" type="image/svg+xml">
-										<source srcset="
-												/images/gallery-1@1x.webp,
-												/images/gallery-1@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-1@1x.jpg" srcset="/images/gallery-1@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-							</div>
-							<div class="gallery__item gallery__item--promo-2">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="/images/gallery-2.svg" type="image/svg+xml">
-										<source srcset="
-												/images/gallery-2@1x.webp,
-												/images/gallery-2@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-2@1x.jpg" srcset="/images/gallery-2@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-							</div>
-							<div class="gallery__item gallery__item--product-1">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="
-												/images/gallery-3@1x.webp,
-												/images/gallery-3@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-3@1x.jpg" srcset="/images/gallery-3@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-								<button class="gallery__favs-button" aria-label="Add to favourites" title="To favourites">
-									<svg class="gallery__favs-icon">
-										<use href="/icons/icon-sprite.svg#heart"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="gallery__item gallery__item--product-2">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="
-												/images/gallery-4@1x.webp,
-												/images/gallery-4@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-4@1x.jpg" srcset="/images/gallery-4@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-								<button class="gallery__favs-button" aria-label="Add to favourites" title="To favourites">
-									<svg class="gallery__favs-icon">
-										<use href="/icons/icon-sprite.svg#heart"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="gallery__item gallery__item--product-3">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="
-												/images/gallery-5@1x.webp,
-												/images/gallery-5@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-5@1x.jpg" srcset="/images/gallery-5@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-								<button class="gallery__favs-button" aria-label="Add to favourites" title="To favourites">
-									<svg class="gallery__favs-icon">
-										<use href="/icons/icon-sprite.svg#heart"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="gallery__item gallery__item--product-4">
-								<a href="/" class="gallery__link">
-									<picture>
-										<source srcset="
-												/images/gallery-6@1x.webp,
-												/images/gallery-6@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-6@1x.jpg" srcset="/images/gallery-6@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-								<button class="gallery__favs-button" aria-label="Add to favourites" title="To favourites">
-									<svg class="gallery__favs-icon">
-										<use href="/icons/icon-sprite.svg#heart"></use>
-									</svg>
-								</button>
-							</div>
-							<div class="gallery__item gallery__item--promo-3">
-								<a href="/" class="gallery__link">
-									<div class="gallery__link-text">
-										<div class="gallery__link-heading">Trending &amp; Hot</div>
-										<div class="gallery__link-subheading">
-											A collection of most trending items.
-										</div>
-									</div>
-									<picture>
-										<source srcset="
-												/images/gallery-7@1x.webp,
-												/images/gallery-7@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-7@1x.jpg" srcset="/images/gallery-7@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-							</div>
-							<div class="gallery__item gallery__item--promo-4">
-								<a href="/" class="gallery__link">
-									<div class="gallery__link-text">
-										<div class="gallery__link-heading">
-											Buy it for the first time
-										</div>
-										<div class="gallery__link-subheading">
-											New in store. Try it before anyone else.
-										</div>
-									</div>
-									<picture>
-										<source srcset="
-												/images/gallery-8@1x.webp,
-												/images/gallery-8@2x.webp 2x
-											" type="image/webp">
-										<img src="/images/gallery-8@1x.jpg" srcset="/images/gallery-8@2x.jpg 2x" alt="Some product category..." class="gallery__image">
-									</picture>
-								</a>
-							</div>
-						</div>
-					</section>
-				</div>
-			</main>
-		</div>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clothing Store Home Page</title>
+        <meta
+            name="description"
+            content="Simple home page for Clothing Store. For education purpose"
+        />
+        <link rel="stylesheet" href="/styles.css" />
+        <script src="/script.js" defer=""></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="visually-hidden">Caped clothing store</h1>
+            <header class="header">
+                <div class="header__wrapper">
+                    <a href="/" class="header__logo"
+                        ><img
+                            src="/images/logo.png"
+                            alt="Company logo"
+                            class="header__logo-image"
+                    /></a>
+                    <nav class="header__navbar">
+                        <div class="header__search">
+                            <svg class="header__search-icon">
+                                <use href="/icons/icon-sprite.svg#search"></use>
+                            </svg>
+                            <input
+                                type="text"
+                                aria-label="Search"
+                                placeholder="Search store"
+                                name="search"
+                                class="header__search-input"
+                            />
+                        </div>
+                        <div class="header__menu">
+                            <a href="/" class="header__link">products</a>
+                            <a href="/" class="header__link">story</a>
+                            <a href="/" class="header__link">manufacturing</a>
+                            <a href="/" class="header__link">packaging</a>
+                        </div>
+                        <div class="header__buttons">
+                            <button
+                                class="header__button-item icon-button"
+                                aria-label="Cart"
+                            >
+                                <svg class="icon-button__icon">
+                                    <use
+                                        href="/icons/icon-sprite.svg#cart"
+                                    ></use>
+                                </svg>
+                            </button>
+                            <button
+                                class="header__button-item icon-button"
+                                aria-label="User profile"
+                            >
+                                <svg class="icon-button__icon">
+                                    <use
+                                        href="/icons/icon-sprite.svg#user"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <button
+                    class="header__menu-button"
+                    aria-label="Main navigation menu"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </header>
+            <main>
+                <div class="content">
+                    <button
+                        class="sidebar-button"
+                        aria-label="Sidebar navigation menu"
+                    >
+                        <svg class="sidebar-button__icon">
+                            <use href="/icons/icon-sprite.svg#sidebar"></use>
+                        </svg>
+                    </button>
+                    <section class="sidebar">
+                        <button
+                            class="sidebar__close-button"
+                            aria-label="Close sidebar menu"
+                        >
+                            <svg class="sidebar__close-icon">
+                                <use href="/icons/icon-sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                        <h2 class="sidebar__heading">Explore</h2>
+                        <nav class="sidebar__menu">
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/new-in.png"
+                                    alt="Lightning icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label">New In</span>
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/clothing.png"
+                                    alt="Coat icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label"
+                                    >Clothing</span
+                                >
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/shoes.png"
+                                    alt="Shoe icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label">Shoes</span>
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/accessories.png"
+                                    alt="Bag icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label"
+                                    >Accessories</span
+                                >
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/active-wear.png"
+                                    alt="Sportsman icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label"
+                                    >Activewear</span
+                                >
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/gifts-living.png"
+                                    alt="Gift box icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label"
+                                    >Gifts &amp; Living</span
+                                >
+                            </a>
+                            <a href="/" class="sidebar__menu-link">
+                                <img
+                                    src="/images/inspiration.png"
+                                    alt="Diamond icon"
+                                    class="sidebar__menu-icon"
+                                />
+                                <span class="sidebar__menu-label"
+                                    >Inspiration</span
+                                >
+                            </a>
+                            <a href="/" class="sidebar__help-link">
+                                <div class="sidebar__help-image">
+                                    <svg class="sidebar__help-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#message"
+                                        ></use>
+                                    </svg>
+                                </div>
+                                <div class="sidebar__help-label">
+                                    Help Center
+                                </div>
+                            </a>
+                        </nav>
+                    </section>
+                    <section class="gallery">
+                        <h2 class="visually-hidden">Products gallery</h2>
+                        <div class="gallery__wrapper">
+                            <div class="gallery__item gallery__item--promo-1">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="/images/gallery-1.svg"
+                                            type="image/svg+xml"
+                                        />
+                                        <source
+                                            srcset="
+                                                /images/gallery-1@1x.webp,
+                                                /images/gallery-1@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-1@1x.jpg"
+                                            srcset="/images/gallery-1@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item--promo-2">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="/images/gallery-2.svg"
+                                            type="image/svg+xml"
+                                        />
+                                        <source
+                                            srcset="
+                                                /images/gallery-2@1x.webp,
+                                                /images/gallery-2@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-2@1x.jpg"
+                                            srcset="/images/gallery-2@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item--product-1">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-3@1x.webp,
+                                                /images/gallery-3@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-3@1x.jpg"
+                                            srcset="/images/gallery-3@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                                <button
+                                    class="gallery__favs-button"
+                                    aria-label="Add to favourites"
+                                    title="To favourites"
+                                >
+                                    <svg class="gallery__favs-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#heart"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="gallery__item gallery__item--product-2">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-4@1x.webp,
+                                                /images/gallery-4@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-4@1x.jpg"
+                                            srcset="/images/gallery-4@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                                <button
+                                    class="gallery__favs-button"
+                                    aria-label="Add to favourites"
+                                    title="To favourites"
+                                >
+                                    <svg class="gallery__favs-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#heart"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="gallery__item gallery__item--product-3">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-5@1x.webp,
+                                                /images/gallery-5@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-5@1x.jpg"
+                                            srcset="/images/gallery-5@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                                <button
+                                    class="gallery__favs-button"
+                                    aria-label="Add to favourites"
+                                    title="To favourites"
+                                >
+                                    <svg class="gallery__favs-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#heart"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="gallery__item gallery__item--product-4">
+                                <a href="/" class="gallery__link">
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-6@1x.webp,
+                                                /images/gallery-6@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-6@1x.jpg"
+                                            srcset="/images/gallery-6@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                                <button
+                                    class="gallery__favs-button"
+                                    aria-label="Add to favourites"
+                                    title="To favourites"
+                                >
+                                    <svg class="gallery__favs-icon">
+                                        <use
+                                            href="/icons/icon-sprite.svg#heart"
+                                        ></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="gallery__item gallery__item--promo-3">
+                                <a href="/" class="gallery__link">
+                                    <div class="gallery__link-text">
+                                        <div class="gallery__link-heading">
+                                            Trending &amp; Hot
+                                        </div>
+                                        <div class="gallery__link-subheading">
+                                            A collection of most trending items.
+                                        </div>
+                                    </div>
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-7@1x.webp,
+                                                /images/gallery-7@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-7@1x.jpg"
+                                            srcset="/images/gallery-7@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="gallery__item gallery__item--promo-4">
+                                <a href="/" class="gallery__link">
+                                    <div class="gallery__link-text">
+                                        <div class="gallery__link-heading">
+                                            Buy it for the first time
+                                        </div>
+                                        <div class="gallery__link-subheading">
+                                            New in store. Try it before anyone
+                                            else.
+                                        </div>
+                                    </div>
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                /images/gallery-8@1x.webp,
+                                                /images/gallery-8@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src="/images/gallery-8@1x.jpg"
+                                            srcset="/images/gallery-8@2x.jpg 2x"
+                                            alt="Some product category..."
+                                            class="gallery__image"
+                                        />
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
