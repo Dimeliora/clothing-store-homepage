@@ -1,26 +1,41 @@
 .icon-button {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	transition: transform 0.2s ease-out;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 
-	&__icon {
-		width: 24px;
-		height: 24px;
-		fill: $black;
-	}
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, -50%) scale(0);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(215, 215, 215, 0.4);
+        transition: transform 0.2s ease-out;
+    }
 
-	&:focus-visible,
-	&:hover {
-		outline: none;
-		transform: scale(1.2);
+    &:focus,
+    &:hover {
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
 
-		@media (max-width: $lg) {
-			transform: none;
-		}
-	}
+            @media (max-width: $lg) {
+                transform: translate(-50%, -50%) scale(0);
+            }
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: $black;
+    }
 }

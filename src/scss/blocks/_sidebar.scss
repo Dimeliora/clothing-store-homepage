@@ -123,10 +123,8 @@
 			margin-bottom: 0;
 		}
 
-		&:focus-visible,
+		&:focus,
 		&:hover {
-			outline: none;
-
 			.sidebar__menu-icon {
 				transform: scale(1.25);
 			}
@@ -173,10 +171,8 @@
 		color: $black;
 		text-decoration: none;
 
-		&:focus-visible,
+		&:focus,
 		&:hover {
-			outline: none;
-
 			.sidebar__help-icon {
 				transform: scale(1.2);
 			}

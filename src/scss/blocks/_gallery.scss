@@ -100,9 +100,8 @@
 		text-transform: none;
 		transition: filter 0.2s ease-out;
 
-		&:focus-visible,
+		&:focus,
 		&:hover {
-			outline: none;
 			filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.45));
 
 			@media screen and (max-width: $lg) {
@@ -126,9 +125,8 @@
 		cursor: pointer;
 		transition: all 0.2s ease-out;
 
-		&:focus-visible,
+		&:focus,
 		&:hover {
-			outline: none;
 			transform: scale(1.2);
 
 			.gallery__favs-icon {
@@ -154,9 +152,8 @@
 				fill: #fff;
 			}
 
-			&:focus-visible,
+			&:focus,
 			&:hover {
-				outline: none;
 				transform: scale(1.2);
 
 				.gallery__favs-icon {
