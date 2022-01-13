@@ -1,4 +1,4 @@
-import { productsElms } from './dom-elements';
+import { productsElms } from './products-dom-elements';
 
 productsElms.productsGalleryElm.addEventListener('click', (e) => {
     const productFavBtn = e.target.closest('[data-products-fav]');

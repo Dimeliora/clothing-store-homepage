@@ -1,3 +1,3 @@
-import './fav-buttons-handler';
-import './main-menu-handler';
-import './sidebar-handler';
+import './menu/menu-handler';
+import './sidebar/sidebar-handler';
+import './products/products-handler';

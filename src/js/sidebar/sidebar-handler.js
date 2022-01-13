@@ -1,4 +1,4 @@
-import { sidebarElms } from './dom-elements';
+import { sidebarElms } from './sidebar-dom-elements';
 
 const sidebarHandler = () => {
     sidebarElms.sidebarElm.classList.toggle('sidebar--active');

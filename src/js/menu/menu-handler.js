@@ -1,4 +1,4 @@
-import { mainMenuElms } from './dom-elements';
+import { mainMenuElms } from './menu-dom-elements';
 
 const showLinkUnderline = ({ target }) => {
     if (target.closest('[data-main-menu-link]')) {
